@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="243.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.jdbc.controller.CustomerManageController">
+   <children>
+      <Label layoutX="136.0" layoutY="24.0" text="Customer Manage" />
+      <TextField fx:id="txtId" layoutX="16.0" layoutY="89.0" promptText="ID" />
+      <TextField fx:id="txtName" layoutX="205.0" layoutY="89.0" promptText="Name" />
+      <TextField fx:id="txtAddress" layoutX="18.0" layoutY="155.0" promptText="Address" />
+      <TextField fx:id="txtSalary" layoutX="207.0" layoutY="155.0" promptText="Salary" />
+      <JFXButton buttonType="RAISED" layoutX="307.0" layoutY="199.0" onAction="#btnSaveOnAction" style="-fx-background-color: lightblue;" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

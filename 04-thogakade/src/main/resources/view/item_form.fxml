@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="545.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.controller.ItemFormController">
+   <children>
+      <Label layoutX="188.0" layoutY="14.0" text="Item Manage">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="23.0" layoutY="101.0" onAction="#codeSearchOnAction" prefHeight="35.0" prefWidth="245.0" />
+      <Label layoutX="23.0" layoutY="81.0" text="Item Code*" />
+      <Label layoutX="335.0" layoutY="81.0" text="Description*" />
+      <TextField fx:id="txtDescription" layoutX="335.0" layoutY="101.0" prefHeight="35.0" prefWidth="245.0" />
+      <Label layoutX="24.0" layoutY="151.0" text="unit Price*" />
+      <TextField fx:id="txtUnitPrice" layoutX="23.0" layoutY="171.0" prefHeight="35.0" prefWidth="245.0" />
+      <Label layoutX="335.0" layoutY="151.0" text="Qty On Hand*" />
+      <TextField fx:id="txtQtyOnHand" layoutX="335.0" layoutY="171.0" prefHeight="35.0" prefWidth="245.0" />
+      <JFXButton buttonType="RAISED" layoutX="518.0" layoutY="228.0" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="61.0" style="-fx-background-color: lightblue;" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="365.0" layoutY="228.0" onAction="#btnDeleteOnAction" style="-fx-background-color: lightpink;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="228.0" onAction="#btnUpdateOnAction" style="-fx-background-color: lightgreen;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="292.0" layoutY="229.0" onAction="#btnGetAllOnAction" style="-fx-background-color: yellow;" text="Get All">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView layoutX="14.0" layoutY="297.0" prefHeight="200.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="75.0" text="Code" />
+          <TableColumn fx:id="colDescription" prefWidth="229.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="85.0" text="Qty" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="105.0" text="Qty On Hand" />
+            <TableColumn fx:id="colAction" prefWidth="73.0" text="Action" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="521.0" layoutY="504.0" onAction="#btnBackOnAction" prefHeight="35.0" prefWidth="61.0" style="-fx-background-color: grey;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

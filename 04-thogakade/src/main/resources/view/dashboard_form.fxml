@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="297.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.controller.DashboardFormController">
+    <children>
+        <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="15.0" layoutY="115.0" onAction="#btnCustomerOnAction" text="Customer">
+            <graphic>
+                <ImageView fitHeight="99.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/customer.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="192.0" layoutY="115.0" onAction="#btnItemOnAction" text="Item">
+            <graphic>
+                <ImageView fitHeight="99.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/item.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label layoutX="186.0" layoutY="37.0" text="Dashboard">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" contentDisplay="TOP" layoutX="360.0" layoutY="131.0" onAction="#btnPlaceOrderOnAction" text="Place Order">
+            <graphic>
+                <ImageView fitHeight="68.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/place_order.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

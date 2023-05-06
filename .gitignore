@@ -1,0 +1,4 @@
+# Project exclude paths
+/03-fx-jdbc-maven/target/
+/04-thogakade/target/
+/out/
